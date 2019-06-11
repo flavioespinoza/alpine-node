@@ -1,0 +1,33 @@
+{
+  "name": "alpine-node",
+  "version": "1.0.0",
+  "description": "Docker Alpine Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+		"dev": "nodemon run index.js",
+		"test": "test",
+		"docker:build": "docker build -t flavioespinoza/alpine-node .",
+    "docker:push": "docker push flavioespinoza/alpine-node:latest",
+    "docker:release": "npm run docker:build && npm run docker:push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavioespinoza/alpine-node.git"
+  },
+  "keywords": [
+    "docker",
+    "alpine",
+    "node"
+  ],
+  "author": "Flavio Espinoza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flavioespinoza/alpine-node/issues"
+  },
+	"homepage": "https://github.com/flavioespinoza/alpine-node#readme",
+	"dependencies": {
+    "nodemon": "^1.19.1",
+    "ololog": "^1.1.129"
+  }
+}

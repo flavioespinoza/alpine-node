@@ -26,7 +26,7 @@ but each version aligns with the following tags (ie, `mhart/alpine-node:<tag>`).
 Examples
 --------
 
-```console
+```bash
 $ docker run --rm mhart/alpine-node:12 node --version
 v12.4.0
 
